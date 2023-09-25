@@ -15,11 +15,11 @@ public class Gaulois {
 	}
 	
 	public void parler(String texte) {
-		System.out.println(prendreParole() + "« " + texte + "»");
+		System.out.println(prendreParole() + "« " + texte + " »");
 	}
 	private String prendreParole() {
 		// TODO Auto-generated method stub
-		return null;
+		return "Le gaulois" + nom + " : ";
 	}
 	
 	public void frapper(Romain romain) {
@@ -35,7 +35,12 @@ public class Gaulois {
 
 	public static void main(String[] args) {
 		Gaulois asterix = new Gaulois("Asterix", 8);
+		Romain cesar = new Romain("Cesar", 18);
 		System.out.println(asterix);
+		asterix.prendreParole();
+		asterix.parler("yo");
+		asterix.frapper(cesar);
+		
 		
 		
 		
